@@ -21,6 +21,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         tv.text = "Username: $username dan Password: $password"
         val btnShare: Button = findViewById(R.id.btn_share)
         btnShare.setOnClickListener(this)
+
+        val btnNext: Button = findViewById(R.id.btn_next)
+        btnNext.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
@@ -37,6 +40,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 intent.putExtra("history", "Anda Sudah Login")
                 setResult(RESULT_OK, intent)
                 finish()
+            }
+
+            R.id.btn_next -> {
+
+                startActivity(Intent(this,FragmentActivity::class.java))
             }
         }
     }
