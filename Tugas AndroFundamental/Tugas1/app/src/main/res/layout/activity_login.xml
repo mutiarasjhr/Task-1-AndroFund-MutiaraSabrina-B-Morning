@@ -68,6 +68,16 @@
                 android:layout_marginTop="20dp"
                 android:backgroundTint="@color/button"
                 app:cornerRadius="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="History"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_history"
+                android:textSize="26sp"
+                android:textAlignment="center"
+                android:textColor="@color/button"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </LinearLayout>
